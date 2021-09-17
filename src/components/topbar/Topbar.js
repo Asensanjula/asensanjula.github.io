@@ -2,9 +2,9 @@ import './topbar.scss'
 import React from "react";
 import {Person,Mail} from '@material-ui/icons';
 
-function TopBar(props) {
+function TopBar({openMenuBar, setOpenMenuBar}) {
     return (
-        <div className="topBar">
+        <div className={`topBar ${openMenuBar && 'active'}`}>
             <div className="wrapper">
                 <div className="left">
                     <a href="#portfolio" className="logo">PappZI</a>
@@ -18,10 +18,11 @@ function TopBar(props) {
                     </div>
                 </div>
                 <div className="right">
-                    <div className="hamburger">
+                    <div className="hamburger" onClick={() => setOpenMenuBar(!openMenuBar)}>
                         <span className="line1"></span>
                         <span className="line2"></span>
                         <span className="line3"></span>
+                        <span className="line4"></span>
                     </div>
                 </div>
             </div>
