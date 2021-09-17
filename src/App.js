@@ -5,6 +5,7 @@ import Portfolio from "./components/portfolio/Portfolio";
 import Work from "./components/works/Work";
 import Contact from "./components/contact/Contact";
 import './app.scss'
+import Menu from "./components/menu/Menu";
 
 function App() {
 
@@ -12,6 +13,7 @@ function App() {
     return (
     <div className="app">
      <TopBar openMenuBar={openMenuBar} setOpenMenuBar={setOpenMenuBar}/>
+     <Menu openMenuBar={openMenuBar}/>
      <div className="sections">
          <Intro/>
          <Portfolio/>
