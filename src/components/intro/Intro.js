@@ -1,6 +1,8 @@
 import React, {useEffect, useRef} from 'react';
 import './intro.scss';
-import { init } from 'ityped'
+import { init } from 'ityped';
+import {KeyboardArrowDown} from '@material-ui/icons';
+// import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 
 
 function Intro(props) {
@@ -29,7 +31,8 @@ function Intro(props) {
                     <h3>Front-End Developer | <span ref={textRef}></span></h3>
                 </div>
                 <a href="#portfolio">
-                    <img src={process.env.PUBLIC_URL + "/assets/down.png"} alt=""/>
+                    {/*<img src={process.env.PUBLIC_URL + "/assets/down.png"} alt=""/>*/}
+                    <KeyboardArrowDown fontSize="large" className="downIcon"/>
                 </a>
             </div>
         </div>

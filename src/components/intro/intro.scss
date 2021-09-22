@@ -1,6 +1,6 @@
 @import "../../global";
 .intro{
-  background-color: #ffffff;
+  background-color: #000000;
   display: flex;
 
   .left{
@@ -39,21 +39,16 @@
       h1{
         font-size: 60px;
         margin: 10px 0;
-
-        //.first{
-        //  color: $mainColor;
-        //}
-        //.second{
-        //  color: #FD5F37;
-        //}
-
+        color: white;
       }
       h2{
         font-size: 35px;
+        color: white;
       }
 
       h3{
         font-size: 30px;
+        color: white;
 
         span{
           font-size: inherit;
@@ -83,12 +78,17 @@
       bottom: 10px;
       left: 40%;
 
-      img{
-        width: 30px;
-        animation: arrowBlink 2s infinite;
+      .downIcon{
+        //color: rgb(253, 29, 29);
+        color: rgba(252,176,69,0.8830882694874825);
+        //width: 30px;
+        font-size: 50px;
+        animation: arrowBlink 3s infinite;
+
       }
 
       @keyframes arrowBlink {
+
         100%{
           opacity: 0;
         }
