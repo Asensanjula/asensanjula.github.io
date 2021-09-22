@@ -7,7 +7,7 @@ function TopBar({openMenuBar, setOpenMenuBar}) {
         <div className={`topBar ${openMenuBar && 'active'}`}>
             <div className="wrapper">
                 <div className="left">
-                    <a href="#portfolio" className="logo">PappZI</a>
+                    <a href="#intro" className="logo">PappZI</a>
                     <div className="itemContainer">
                         <Person className="icon"/>
                         <span>+94 777 245 503</span>

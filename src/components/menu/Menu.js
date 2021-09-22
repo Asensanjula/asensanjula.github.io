@@ -1,20 +1,20 @@
 import React from 'react';
 import "./menu.scss"
 
-function Menu({openMenuBar}) {
+function Menu({openMenuBar, setOpenMenuBar}) {
     return (
         <div className={"menu " + ( openMenuBar && "active")}>
             <ul>
-                <li>
+                <li onClick={()=> setOpenMenuBar(false)}>
                     <a href="#intro">Home</a>
                 </li>
-                <li>
+                <li onClick={()=> setOpenMenuBar(false)}>
                     <a href="#portfolio">Portfolio</a>
                 </li>
-                <li>
+                <li onClick={()=> setOpenMenuBar(false)}>
                     <a href="#work">Work</a>
                 </li>
-                <li>
+                <li onClick={()=> setOpenMenuBar(false)}>
                     <a href="#contact">Contact</a>
                 </li>
             </ul>
