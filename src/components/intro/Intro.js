@@ -6,7 +6,7 @@ function Intro(props) {
         <div className="intro" id="intro">
             <div className="left">
                 <div className="imgContainer">
-                    <img src={"portfolio/assets/man.png"} alt="profile"/>
+                    <img src={process.env.PUBLIC_URL + "/assets/man.png"} alt="profile"/>
                 </div>
             </div>
             <div className="right">
@@ -16,7 +16,7 @@ function Intro(props) {
                     <h3>Front-End Developer | React JS</h3>
                 </div>
                 <a href="#portfolio">
-                    <img src="portfolio/assets/down.png" alt=""/>
+                    <img src={process.env.PUBLIC_URL + "/assets/down.png"} alt=""/>
                 </a>
             </div>
         </div>
