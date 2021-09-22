@@ -19,7 +19,7 @@ function Intro(props) {
         <div className="intro" id="intro">
             <div className="left">
                 <div className="imgContainer">
-                    <img src={process.env.PUBLIC_URL + "/assets/man.png"} alt="profile"/>
+                    <img src={process.env.PUBLIC_URL + "/assets/asen2.png"} alt="profile"/>
                 </div>
             </div>
             <div className="right">
