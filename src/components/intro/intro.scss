@@ -1,3 +1,4 @@
+@import "../../global";
 .intro{
   background-color: #ffffff;
   display: flex;
@@ -10,8 +11,7 @@
       overflow: hidden;
       width: 700px;
       height: 700px;
-      background-color: #ff4d17;
-      //background-color: crimson;
+      background: linear-gradient(90deg, rgb(253, 29, 29) 50%, rgba(252,176,69,0.8830882694874825) 100%);
       border-radius: 50%;
       display: flex;
       justify-content: center;
@@ -40,6 +40,13 @@
         font-size: 60px;
         margin: 10px 0;
 
+        //.first{
+        //  color: $mainColor;
+        //}
+        //.second{
+        //  color: #FD5F37;
+        //}
+
       }
       h2{
         font-size: 35px;
@@ -50,7 +57,7 @@
 
         span{
           font-size: inherit;
-          color: #ff4d17;
+          color: rgb(253, 29, 29);
         }
 
         .ityped-cursor {

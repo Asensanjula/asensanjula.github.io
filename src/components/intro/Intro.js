@@ -25,7 +25,7 @@ function Intro(props) {
             <div className="right">
                 <div className="wrapper">
                     <h2>Hello There, I'm</h2>
-                    <h1>Asen Sanjula</h1>
+                    <h1><span className="first">Asen</span> <span className="second">Sanjula</span></h1>
                     <h3>Front-End Developer | <span ref={textRef}></span></h3>
                 </div>
                 <a href="#portfolio">
