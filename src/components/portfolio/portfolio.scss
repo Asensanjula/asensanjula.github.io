@@ -76,6 +76,12 @@
         height: inherit;
         object-fit: cover;
         z-index: 1;
+
+        @include mobile{
+          width:120px;
+          height: 100px;
+
+        }
       }
       &:hover{
         background-color: $mainColor;
