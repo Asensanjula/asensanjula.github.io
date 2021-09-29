@@ -1,5 +1,7 @@
 import React from 'react';
+import {Button, Form} from "react-bootstrap";
 import './contact.scss'
+import {Mail,LinkedIn,GitHub,Facebook} from "@material-ui/icons";
 
 function Contact(props) {
 
@@ -12,12 +14,26 @@ function Contact(props) {
                 <img src={process.env.PUBLIC_URL + "/assets/shake.svg"} alt="Shake-icon"/>
             </div>
             <div className="right">
-                <h2>Contact</h2>
-                <form onSubmit={handleSubmit}>
-                    <input type="text" placeholder="Email"/>
-                    <textarea placeholder="Message"></textarea>
-                    <button type="submit">Send</button>
-                </form>
+                <h2>Contact Me</h2>
+                <div className="contactList">
+                    <a href="mailto: asensanjula@gmail.com" className=" btn btn-outline-info">
+                        <Mail className="icon"/>
+                        Email Me
+                    </a>
+                    <a href="https://www.linkedin.com/in/asensanjula/" target="_blank" className=" btn btn-outline-success">
+                        <LinkedIn className="icon"/>
+                       LinkedIn
+                    </a>
+                    <a href="https://github.com/Asensanjula" target="_blank" className=" btn btn-outline-dark">
+                        <GitHub className="icon"/>
+                        GitHub
+                    </a>
+                    <a href="https://www.facebook.com/asen.sanjula/" target="_blank"  className=" btn btn-outline-primary">
+                        <Facebook className="icon"/>
+                        FaceBook
+                    </a>
+                </div>
+
             </div>
         </div>
     );
