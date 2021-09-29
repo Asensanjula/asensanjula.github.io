@@ -3,11 +3,13 @@ import React from "react";
 import {Person,Mail} from '@material-ui/icons';
 
 function TopBar({openMenuBar, setOpenMenuBar}) {
+
+    let logoName = "<|>";
     return (
         <div className={`topBar ${openMenuBar && 'active'}`}>
             <div className="wrapper">
                 <div className="left">
-                    <a href="#intro" className="logo">Sanju.</a>
+                    <a href="#intro" className="logo">{logoName}</a>
                     <div className="itemContainer">
                         <Person className="icon"/>
                         <span>+94 777 245 503</span>
