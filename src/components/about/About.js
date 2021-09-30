@@ -25,7 +25,7 @@ function About(props) {
                 </div>
 
             </div>
-            <div className="right">
+            <div className="right" >
                 <Favorite className="icon"/>
                 <h3>interests</h3>
                 <div className="fav">

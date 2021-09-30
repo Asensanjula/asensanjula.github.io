@@ -3,6 +3,7 @@ import './intro.scss';
 import { init } from 'ityped';
 import {KeyboardArrowDown} from '@material-ui/icons';
 import Particles from 'react-particles-js';
+import {Button} from "react-bootstrap";
 
 
 function Intro(props) {
@@ -49,8 +50,9 @@ function Intro(props) {
                     <h2>Hello There, I'm</h2>
                     <h1><span className="first">Asen</span> <span className="second">Sanjula</span></h1>
                     <h3>Front-End Developer | <span ref={textRef}></span></h3>
+                    <a href="#contact" className="hireMeBtn btn btn-outline-warning" >Hire Me</a>
                 </div>
-                <a href="#portfolio">
+                <a href="#about">
                     {/*<img src={process.env.PUBLIC_URL + "/assets/down.png"} alt=""/>*/}
                     <KeyboardArrowDown fontSize="large" className="downIcon"/>
                 </a>
