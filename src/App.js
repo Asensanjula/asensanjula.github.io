@@ -7,6 +7,7 @@ import Contact from "./components/contact/Contact";
 import './app.scss'
 import Menu from "./components/menu/Menu";
 import Particles from 'react-particles-js';
+import About from "./components/about/About";
 
 function App() {
 
@@ -16,20 +17,8 @@ function App() {
      <TopBar openMenuBar={openMenuBar} setOpenMenuBar={setOpenMenuBar}/>
      <Menu openMenuBar={openMenuBar} setOpenMenuBar={setOpenMenuBar}/>
      <div className="sections">
-         {/*<Particles*/}
-         {/*    params={{*/}
-         {/*        particles: {*/}
-         {/*            number: {*/}
-         {/*                value: 30,*/}
-         {/*                density:{*/}
-         {/*                    enable:true,*/}
-         {/*                    value_area:900*/}
-         {/*                }*/}
-         {/*            }*/}
-         {/*        }*/}
-         {/*    }}*/}
-         {/*/>*/}
          <Intro/>
+         <About/>
          <Portfolio/>
          <Work/>
          <Contact/>

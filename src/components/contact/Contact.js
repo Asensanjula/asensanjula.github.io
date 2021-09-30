@@ -14,7 +14,7 @@ function Contact(props) {
                 <img src={process.env.PUBLIC_URL + "/assets/shake.svg"} alt="Shake-icon"/>
             </div>
             <div className="right">
-                <h2>Contact Me</h2>
+                <h2>Connect With Me</h2>
                 <div className="contactList">
                     <a href="mailto: asensanjula@gmail.com" className=" btn btn-info">
                         <Mail className="icon"/>
