@@ -16,19 +16,19 @@ function Contact(props) {
             <div className="right">
                 <h2>Contact Me</h2>
                 <div className="contactList">
-                    <a href="mailto: asensanjula@gmail.com" className=" btn btn-outline-info">
+                    <a href="mailto: asensanjula@gmail.com" className=" btn btn-info">
                         <Mail className="icon"/>
                         Email Me
                     </a>
-                    <a href="https://www.linkedin.com/in/asensanjula/" target="_blank" className=" btn btn-outline-success">
+                    <a href="https://www.linkedin.com/in/asensanjula/" target="_blank" className=" btn btn-success">
                         <LinkedIn className="icon"/>
                        LinkedIn
                     </a>
-                    <a href="https://github.com/Asensanjula" target="_blank" className=" btn btn-outline-dark">
+                    <a href="https://github.com/Asensanjula" target="_blank" className=" btn btn-dark">
                         <GitHub className="icon"/>
                         GitHub
                     </a>
-                    <a href="https://www.facebook.com/asen.sanjula/" target="_blank"  className=" btn btn-outline-primary">
+                    <a href="https://www.facebook.com/asen.sanjula/" target="_blank"  className=" btn btn-primary">
                         <Facebook className="icon"/>
                         FaceBook
                     </a>
