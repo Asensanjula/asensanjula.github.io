@@ -9,9 +9,15 @@
     align-items: center;
   }
 
+  canvas{
+    position: absolute;
+
+  }
+
   .left{
     flex:0.5;
     overflow: hidden;
+    z-index: 1;
 
     .imgContainer{
       overflow: hidden;

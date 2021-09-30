@@ -2,7 +2,7 @@ import React, {useEffect, useRef} from 'react';
 import './intro.scss';
 import { init } from 'ityped';
 import {KeyboardArrowDown} from '@material-ui/icons';
-// import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
+import Particles from 'react-particles-js';
 
 
 function Intro(props) {
@@ -19,6 +19,26 @@ function Intro(props) {
     },[])
     return (
         <div className="intro" id="intro">
+            <Particles
+                params={{
+                    particles: {
+                        number: {
+                            value: 40,
+                            density:{
+                                enable:true,
+                                value_area:1000
+                            }
+                        },
+                        line_linked: {
+                            shadow: {
+                                enable: true,
+                                color: "#e72121",
+                                // blur: 5
+                            }
+                        }
+                    }
+                }}
+            />
             <div className="left">
                 <div className="imgContainer">
                     <img src={process.env.PUBLIC_URL + "/assets/asen2.png"} alt="profile"/>
