@@ -4,6 +4,9 @@
   background-color: white;
   display: flex;
 
+  @include mobile{
+    flex-direction: column;
+  }
 
   .left{
     flex: 1;
@@ -14,14 +17,22 @@
     align-items: center;
     z-index: 0;
 
+    @include mobile{
+      flex: 0.4;
+    }
+
     h2{
-      color: #5c8467;
+      //color: #5c8467;
       position: relative;
       text-align: center;
       width: 50%;
       margin-right: auto;
       margin-left: auto;
       //color: white;
+
+      @include mobile{
+        font-size: 22px;
+      }
 
       &:before{
         content: "";
@@ -66,12 +77,17 @@
       //background-color: #e2b0b0;
       //border-radius: 8px;
 
+      @include mobile{
+        width: 90%;
+      }
+
 
       .item{
         display: flex;
         align-items: center;
-        box-shadow: 0 0 5px #e2e2e2;
-        background: #fff;
+        //box-shadow: 0 0 3px #e2e2e2;
+        //background: #A6C5AF;
+        background: #b7d3bd;
         //border: 1px solid #f5c7aa;
         border-radius: 5px;
         transition: all .2s ease-in-out;
@@ -86,16 +102,28 @@
           display: flex;
           justify-content: center;
           flex: 0.4;
+          background-color: white;
         }
         img{
           height: 80px;
           width: 150px;
           object-fit: contain;
 
+          @include mobile{
+            height: 30px;
+            width: 70px;
+            object-fit: contain;
+            //width: 100px;
+          }
+
+          @include mobileSE{
+            height: 30px;
+            width: 70px;
+          }
+
         }
 
         .item_desc{
-          border-left: 3px solid #a6c5af;
           flex: 0.6;
           display: flex;
           flex-direction: column;
@@ -105,9 +133,30 @@
             margin-left: 5px;
           }
 
+          h4{
+            color: #000000;
+            font-size: 18px;
+
+            @include mobile{
+              font-size: 12px;
+            }
+
+            @include mobileSE{
+              font-size: 12px;
+            }
+          }
+
           h6{
             font-weight: 400;
-            color: rgba(80, 79, 79, 0.77);
+            font-size: 14px;
+
+            @include mobile{
+              font-size: 9px;
+            }
+
+            @include mobileSE{
+              font-size: 9px;
+            }
           }
         }
       }
@@ -122,6 +171,10 @@
     align-items: center;
     justify-content: center;
 
+    @include mobile{
+      flex: 0.6;
+    }
+
     .title{
       flex: 0.1;
       display: flex;
@@ -135,6 +188,10 @@
       font-size: 28px;
       //transform:scale(-1);
       //transform: rotate(-90deg);
+
+      @include mobile{
+        font-size: 12px;
+      }
     }
 
     .projects{
@@ -143,12 +200,21 @@
       flex-wrap: wrap;
       margin-right: 5px;
 
+      @include mobile{
+        //flex-direction: column;
+        //justify-content: center;
+      }
+
       .projectCard{
         padding: 5px 8px;
         display: flex;
         flex-direction: column;
         //box-shadow: 0 0 5px #e2e2e2;
         width: 33.33%;
+
+        @include mobile{
+          width: 50%;
+        }
 
         &:hover{
           background-color: rgb(175, 206, 182);
@@ -161,6 +227,13 @@
 
         .projectName{
           //flex: 1 1 auto;
+
+          h6{
+            @include mobile{
+              font-size: 10px;
+              margin-bottom: 0!important;
+            }
+          }
         }
 
         .projectDesc{
@@ -169,11 +242,24 @@
           flex: 1 1 auto;
           padding: 5px;
 
+          @include mobile{
+            flex: none;
+          }
+
           .para{
             flex: 1 1 auto;
 
+            @include mobile{
+              flex: none;
+            }
+
             p{
               font-size: 14px;
+
+              @include mobile{
+                font-size: 8px;
+                margin-bottom: 0;
+              }
             }
 
           }
@@ -181,6 +267,10 @@
           .tech{
             label{
               font-size: 12px;
+
+              @include mobile{
+                display: none;
+              }
             }
           }
         }
