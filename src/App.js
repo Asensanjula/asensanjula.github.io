@@ -10,6 +10,7 @@ import Particles from 'react-particles-js';
 import About from "./components/about/About";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import Experience from "./components/experience/Experience";
 
 function App() {
 
@@ -26,6 +27,7 @@ function App() {
      <div className="sections">
          <Intro/>
          <About/>
+         <Experience/>
          <Portfolio/>
          <Work/>
          <Contact/>

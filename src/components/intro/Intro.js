@@ -15,7 +15,7 @@ function Intro(props) {
                 showCursor: true,
                 backDelay:1000,
                 backSpeed:  60,
-                strings: ['React JS', 'Bootstrap', 'Redux', 'Mongo DB' ]
+                strings: ['React JS', 'Bootstrap', 'Redux', 'Mongo DB', 'FireBase', 'Next.JS' ]
             })
     },[])
     return (
