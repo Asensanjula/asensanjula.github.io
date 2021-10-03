@@ -4,6 +4,7 @@
   background-color: white;
   display: flex;
 
+
   .left{
     flex: 1;
     //background-color: #89B399;
@@ -52,6 +53,9 @@
       }
     }
     .work_exp{
+      border-bottom: 5px solid #A6C5AF;
+      border-left: 3px solid #A6C5AF;
+      border-radius: 10px;
       height: 70%;
       width: 80%;
       display: flex;
@@ -91,12 +95,14 @@
         }
 
         .item_desc{
+          border-left: 3px solid #a6c5af;
           flex: 0.6;
           display: flex;
           flex-direction: column;
           justify-content: center;
           h4, h6{
             margin-bottom: 0;
+            margin-left: 5px;
           }
 
           h6{
