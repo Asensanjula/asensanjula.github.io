@@ -15,7 +15,7 @@
     z-index: 0;
 
     h2{
-      color:crimson;
+      color: #5c8467;
       position: relative;
       text-align: center;
       width: 50%;
@@ -28,7 +28,7 @@
         display: block;
         width: 100px;
         height: 1.6px;
-        background-color: crimson;
+        background-color: #5c8467;
         position: absolute;
         left: 0;
         top: 50%;
@@ -40,7 +40,7 @@
         display: block;
         width: 100px;
         height: 1.6px;
-        background-color: crimson;
+        background-color: #5c8467;
         position: absolute;
         right: 0;
         top: 50%;
@@ -115,7 +115,79 @@
   }
 
   .right{
+    border-bottom-right-radius: 40%;
     flex: 1;
     background-color: #A6C5AF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .title{
+      flex: 0.1;
+      display: flex;
+      justify-content: center;
+    }
+    h2{
+      background-color: rgb(175, 206, 182);
+      border-radius: 5px;
+      writing-mode: vertical-rl;
+      text-orientation: upright;
+      font-size: 28px;
+      //transform:scale(-1);
+      //transform: rotate(-90deg);
+    }
+
+    .projects{
+      flex: 0.9;
+      display: flex;
+      flex-wrap: wrap;
+      margin-right: 5px;
+
+      .projectCard{
+        padding: 5px 8px;
+        display: flex;
+        flex-direction: column;
+        //box-shadow: 0 0 5px #e2e2e2;
+        width: 33.33%;
+
+        &:hover{
+          background-color: rgb(175, 206, 182);
+
+        }
+
+        //@include mobile{
+        //  width: 100%;
+        //}
+
+        .projectName{
+          //flex: 1 1 auto;
+        }
+
+        .projectDesc{
+          display: flex;
+          flex-direction: column;
+          flex: 1 1 auto;
+          padding: 5px;
+
+          .para{
+            flex: 1 1 auto;
+
+            p{
+              font-size: 14px;
+            }
+
+          }
+
+          .tech{
+            label{
+              font-size: 12px;
+            }
+          }
+        }
+
+      }
+    }
+
+
   }
 }
