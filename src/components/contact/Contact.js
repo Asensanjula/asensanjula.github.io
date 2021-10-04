@@ -11,7 +11,7 @@ function Contact(props) {
     return (
         <div className="contact" id="contact">
             <div className="left">
-                <img src={process.env.PUBLIC_URL + "/assets/shake.svg"} alt="Shake-icon"/>
+                <img src={process.env.PUBLIC_URL + "/assets/contact.jpg"} alt="Shake-icon"/>
             </div>
             <div className="right">
                 <h2>Connect With Me</h2>

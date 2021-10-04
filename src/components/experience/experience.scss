@@ -173,12 +173,15 @@
 
     @include mobile{
       flex: 0.6;
+      flex-direction: column;
     }
 
     .title{
       flex: 0.1;
       display: flex;
       justify-content: center;
+      align-items: center;
+
     }
     h2{
       background-color: rgb(175, 206, 182);
@@ -191,6 +194,9 @@
 
       @include mobile{
         font-size: 12px;
+        writing-mode: unset;
+        margin-top: 5px;
+        padding: 2px 5px;
       }
     }
 
@@ -203,6 +209,7 @@
       @include mobile{
         //flex-direction: column;
         //justify-content: center;
+        padding: 0 15px;
       }
 
       .projectCard{
