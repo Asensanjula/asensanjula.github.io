@@ -4,11 +4,17 @@
   background-color: white;
   display: flex;
   overflow: hidden;
-
+  //background-color: #1a1a1a;
+  background-color: #101820FF;
+  //color: #E0943B;
+  color: #F2AA4CFF;
   @include mobile{
     flex-direction: column;
   }
 
+  h3{
+    font-weight: 900;
+  }
   .icon{
     font-size: 40px;
 
@@ -25,8 +31,9 @@
     justify-content: center;
     align-items: center;
     //background-color: #fff4f4;
-    background-color: #fae0da;
-    color: black;
+    //background-color: #fae0da;
+    //background-color: #1a1a1a;
+    //color: #E0943B;
 
 
     &:hover{
@@ -41,7 +48,7 @@
     }
 
     h3{
-      color: black;
+      //color: #E0943B;
       font-size: 35px;
 
       @include mobile{
@@ -71,14 +78,14 @@
     justify-content: center;
     align-items: center;
     //background-color: #e6dcdc;
-    background-color: #fdefec;
+    //background-color: #fdefec;
 
     @include mobile{
       flex: 0.8;
     }
 
     h3{
-      color: black;
+      //color: black;
       font-size: 35px;
 
       @include mobile{
@@ -107,7 +114,8 @@
         }
       }
       span{
-        color: #5c5b5b;
+        //color: #5c5b5b;
+        opacity: 0.6;
       }
     }
 
@@ -124,10 +132,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #fae0da;
+    //background-color: #fae0da;
 
     h3{
-      color: black;
+      //color: black;
       font-size: 35px;
 
       @include mobile{

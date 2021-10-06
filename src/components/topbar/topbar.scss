@@ -33,6 +33,11 @@
         display: flex;
         align-items: center;
         margin-left: 30px;
+        color: #e2e2e2e2;
+
+        span{
+          font-weight: 300;
+        }
 
         @include mobile{
           display: none;
