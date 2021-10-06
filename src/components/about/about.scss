@@ -5,9 +5,9 @@
   display: flex;
   overflow: hidden;
   //background-color: #1a1a1a;
-  background-color: #101820FF;
+  background-color: $mainBgColorTwo;
   //color: #E0943B;
-  color: #F2AA4CFF;
+  color: $mainTxtColor;
   @include mobile{
     flex-direction: column;
   }
@@ -38,11 +38,11 @@
 
     &:hover{
       transition: all 0.2s ease-in-out;
-      transform: scale(1.1);
-      -webkit-filter: invert(0.8);
+      //transform: scale(1.1);
+      //-webkit-filter: invert(0.8);
 
       p{
-        font-weight: normal;
+        //font-weight: normal;
       }
 
     }
@@ -165,11 +165,11 @@
     }
     &:hover{
       transition: all 0.2s ease-in-out;
-      transform: scale(1.1);
-      -webkit-filter: invert(0.8);
+      //transform: scale(1.1);
+      //-webkit-filter: invert(0.8);
 
       li{
-        font-weight: normal;
+        //font-weight: normal;
       }
     }
   }

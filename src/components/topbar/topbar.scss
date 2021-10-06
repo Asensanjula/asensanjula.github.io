@@ -1,7 +1,7 @@
 @import "../../global";
 
 .topBar {
-  background-color: #000000;
+  background-color: $mainBgColorOne;
   width: 100%;
   height: 70px;
   position: fixed;
@@ -70,7 +70,7 @@
           width: 100%;
           height: 3px;
           border-radius: 5px;
-          background-color: $mainColor;
+          background-color: #e2e2e2;
           position: absolute;
           transition: all 0.5s ease-in-out;
           &:first-child {
@@ -89,7 +89,7 @@
 }
 
 .active{
-  background-color: $mainColor;
+  background-color: #020a13;
   color: white;
 
   .right {
@@ -105,14 +105,14 @@
         -moz-transform: rotate(45deg);
         -o-transform: rotate(45deg);
         transform: rotate(45deg);
-        background-color: white;
+        background-color: #e2e2e2;
       }
         &:nth-child(3) {
           -webkit-transform: rotate(-45deg);
           -moz-transform: rotate(-45deg);
           -o-transform: rotate(-45deg);
           transform: rotate(-45deg);
-          background-color: white;
+          background-color: #e2e2e2;
         }
 
         &:last-child {
