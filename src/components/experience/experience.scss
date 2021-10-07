@@ -59,6 +59,7 @@
         text-align: left;
         font-weight: 300;
         margin-bottom: 20px;
+        flex: 1;
 
         @include mobile{
           font-size: 8px;
