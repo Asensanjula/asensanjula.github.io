@@ -15,8 +15,11 @@ function Menu({openMenuBar, setOpenMenuBar}) {
                     <a href="#experience">Experience</a>
                 </li>
                 <li onClick={()=> setOpenMenuBar(false)}>
-                    <a href="#portfolio">Portfolio</a>
+                    <a href="#skill">Skills</a>
                 </li>
+                {/*<li onClick={()=> setOpenMenuBar(false)}>*/}
+                {/*    <a href="#portfolio">Portfolio</a>*/}
+                {/*</li>*/}
                 <li onClick={()=> setOpenMenuBar(false)}>
                     <a href="#work">Work</a>
                 </li>

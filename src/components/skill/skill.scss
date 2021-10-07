@@ -1,0 +1,67 @@
+@import "../../global";
+
+.skill{
+  background-color: $mainBgColorTwo;
+  color: $mainTxtColor;
+  display: flex;
+
+  .left{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h1{
+      font-size: 100px;
+      //text-transform: up;
+    }
+  }
+
+  .right{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    //background-color: white;
+
+    .wrapper{
+      //background-color: #0f6674;
+      width: 60%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: center;
+      //margin: 15px;
+
+      .skillItem{
+        margin: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100px;
+        height: 100px;
+        background-color: $mainBgColorOne;
+        border-radius: 5px;
+        cursor: pointer;
+
+        &:hover{
+          border-bottom: 4px solid #F2AA4C;
+        }
+
+        img{
+          width: 60px;
+          height: 60px;
+          object-fit: contain;
+
+          //svg{
+          //  filter: invert(74%) sepia(14%) saturate(2062%) hue-rotate(340deg) brightness(103%) contrast(90%);
+          //}
+        }
+
+        .svgImg{
+          //filter: invert(70%) sepia(35%) saturate(685%) hue-rotate(352deg) brightness(94%) contrast(101%);
+        }
+      }
+    }
+  }
+}

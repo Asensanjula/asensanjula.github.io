@@ -11,6 +11,7 @@ import About from "./components/about/About";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Experience from "./components/experience/Experience";
+import Skill from "./components/skill/Skill";
 
 function App() {
 
@@ -28,8 +29,9 @@ function App() {
          <Intro/>
          <About/>
          <Experience/>
+         <Skill/>
          {/*<Portfolio/>*/}
-         <Work/>
+         {/*<Work/>*/}
          <Contact/>
      </div>
     </div>
