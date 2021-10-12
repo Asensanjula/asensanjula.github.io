@@ -1,9 +1,17 @@
 @import "../../global";
 
+.tooltip-inner{
+  color: $mainTxtColor;
+}
+
 .skill{
   background-color: $mainBgColorTwo;
-  color: $mainTxtColor;
+  color: $mainTxtColorLight;
   display: flex;
+
+  @include mobile{
+    flex-direction: column;
+  }
 
   .left{
     flex: 1;
@@ -11,9 +19,17 @@
     justify-content: center;
     align-items: center;
 
+    @include mobile{
+      flex: 0.1;
+    }
+
     h1{
       font-size: 100px;
       //text-transform: up;
+
+      @include mobile{
+        font-size: 35px;
+      }
     }
   }
 
@@ -24,6 +40,10 @@
     justify-content: center;
     //background-color: white;
 
+    @include mobile{
+      flex: 0.9;
+    }
+
     .wrapper{
       //background-color: #0f6674;
       width: 60%;
@@ -32,6 +52,10 @@
       justify-content: space-around;
       align-items: center;
       //margin: 15px;
+
+      @include mobile{
+        width: 80%;
+      }
 
       .skillItem{
         margin: 5px;
