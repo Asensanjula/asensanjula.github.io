@@ -16,11 +16,24 @@
   .left{
     flex: 1;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 
+    .nav-pills{
+
+      a{
+        color: $mainTxtColor;
+      }
+    }
+    .nav-link.active{
+      color: $mainTxtColorLight;
+      background-color: $mainBgColorOne;
+      transition: all 0.4s ease-in-out;
+    }
+
     @include mobile{
-      flex: 0.1;
+      flex: 0.2;
     }
 
     h1{
@@ -41,7 +54,7 @@
     //background-color: white;
 
     @include mobile{
-      flex: 0.9;
+      flex: 0.8;
     }
 
     .wrapper{
