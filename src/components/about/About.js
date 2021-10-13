@@ -9,9 +9,10 @@ function About(props) {
             <div className="left">
                 <Info className="icon"/>
                 <h3>about</h3>
-                <p>An enthusiastic and ambitious person who passionate on learning new technologies while taking up new
-                    challenges. As being a good team player and quick learner I am looking for a challenging career in
-                    software development sector to utilize my knowledge while updating constantly.</p>
+                <p>Hello, my name is Asen. I'm a web developer living in <strong>Srilanka</strong>.
+                    I have extensive programming experience and i'm comfortable developing on the
+                    front end or backend. I love to specialize in JavaScript Technologies across the whole stack
+                    (Node js, Express, React, Redux,) as my tech stack.</p>
             </div>
             <div className="middle">
                 <School className="icon"/>
