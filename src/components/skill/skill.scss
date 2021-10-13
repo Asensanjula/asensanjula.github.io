@@ -37,12 +37,7 @@
     }
 
     h1{
-      font-size: 100px;
-      //text-transform: up;
-
-      @include mobile{
-        font-size: 35px;
-      }
+      font-size: clamp(35px,7vw,150px);
     }
   }
 
