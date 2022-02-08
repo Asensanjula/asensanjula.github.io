@@ -11,7 +11,7 @@ function Experience(props) {
                     <h5>eChanneling UI Revamp</h5>
                     <p>Re design and implement the  eChanneling website. So users can have efficient and user friendly experience</p>
                     <div className="btnGroup">
-                        <a href="https://test.ezchannelling.com/" target="_blank" className="btn btn-outline-warning">Website</a>
+                        <a href="https://www.echannelling.com/" target="_blank" className="btn btn-outline-warning">Website</a>
                         <Button variant="outline-warning">GitHub</Button>
                     </div>
                 </div>
