@@ -12,7 +12,7 @@ function TopBar({openMenuBar, setOpenMenuBar}) {
                     <a href="#intro" className="logo">{logoName}</a>
                     <div className="itemContainer">
                         <Person className="icon"/>
-                        <span>+94 777 245 503</span>
+                        <span>+65 8151 6951</span>
                     </div>
                     <div className="itemContainer">
                         <Mail className="icon"/>

@@ -1,6 +1,6 @@
 {
   "homepage": "http://Asensanjula.github.io",
-  "name": "portfolio",
+  "name": "asensanjula.github.io",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -9,6 +9,7 @@
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
+    "aos": "^2.3.4",
     "bootstrap": "^4.6.0",
     "ityped": "^1.0.3",
     "node-sass": "^6.0.1",
